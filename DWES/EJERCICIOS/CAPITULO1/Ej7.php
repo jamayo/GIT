@@ -15,7 +15,9 @@ and open the template in the editor.
       $apellidos = "Mayo Mayo";
       $direccion = "C/Margarita";
       $telefono = "952000000";
-    echo "Mi nombre es: $nombre<br>Apellidos: $apellidos<br>Dirección: $direccion<br>Teléfono: $telefono";    
+    echo "Mi nombre es: $nombre<br>Apellidos: $apellidos<br>Dirección: $direccion<br>Teléfono: $telefono";  
+    //si quiero que en el codigo fuente html haya un salto de linea... pongo /n. solo para ordenacion y entre comillas dobles
+    // entre simples no.
     ?>
   </body>
 </html>

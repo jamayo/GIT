@@ -14,6 +14,7 @@ and open the template in the editor.
       $nombre = "José Antonio";
       $apellidos = "Mayo Mayo";
     echo "Mi nombre es: ", $nombre, " ", $apellidos;
+    echo "Mi nombre es: $nombre<br>";  //es lo mismo que el anterior. si es comillas dobles. con simples no funciona asi.
     ?>
   </body>
 </html>
