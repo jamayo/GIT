@@ -24,14 +24,14 @@ Escribe un programa que ordene tres números enteros introducidos por teclado.
           if (!is_numeric($numero1 . $numero2 . $numero3 )){
             echo "No has introducido tres numeros";
           } else {  //evaluo el numero introducido
-            (A==A)?((($numero1 >= $numero2)?(($numero1 >= $numero3)?(($numero2 >= $numero3)?
+            ($numero1 >= $numero2)?(($numero1 >= $numero3)?(($numero2 >= $numero3)?
               "Los numeros ordenados de mayor a menor son: " . $numero1 . ", " . $numero2 . ", " . $numero3:
-              "Los numeros ordenados de mayor a menor son: " . $numero1 . ", " . $numero3 . ", " . $numero2):
+              "Los numeros ordenados de mayor a menor son: " . $numero1 . ", " . $numero3 . ", " . $numero2:
               "Los numeros ordenados de mayor a menor son: " . $numero3 . ", " . $numero1 . ", " . $numero2):
               (($numero2 >= $numero3)?(($numero3 >= $numero1)?
                     "Los numeros ordenados de mayor a menor son: " . $numero2 . ", " . $numero3 . ", " . $numero1:
-              "Los numeros ordenados de mayor a menor son: " . $numero2 . ", " . $numero1 . ", " . $numero3)))):(
-              "Los numeros ordenados de mayor a menor son: " . $numero3 . ", " . $numero2 . ", " . $numero1);
+              "Los numeros ordenados de mayor a menor son: " . $numero2 . ", " . $numero1 . ", " . $numero3:
+              "Los numeros ordenados de mayor a menor son: " . $numero3 . ", " . $numero2 . ", " . $numero1;
             } 
           }
         
