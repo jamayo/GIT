@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-oct-2015, 11:55:32
+    Author     : jamayo
+*/
+@charset "utf-8";
+* {margin: 0px;padding: 0px;}
+div#pantalla {
+  min-height: 550px;
+  min-width: 800px;
+  
+}
+div#mostrar {
+  min-height: 50px;
+  min-width: 398px;
+  max-width: 398px;
+  border: 1px solid black;
+}
+div#cajafuerte {
+  background-image: url("/img/cajafuerte.jpg");
+  background-size: 500px 350px;
+  background-size: 100% 100%;
+  //position: absolute;
+  float: left;
+  min-height: 550px;
+  min-width: 400px;
+  //border: 1px solid black;
+  
+}
+/*div#panel {
+  //background-image: url("/img/cajafuerte.jpg");
+  background-size: 500px 350px;
+  background-size: 100% 100%;
+  //position: absolute;
+  float: left;
+  min-height: 550px;
+  min-width: 400px;
+  border: 1px solid black;
+  
+}*/
+
+div.mitadhorizontal {
+  position: relative;
+  min-height: 250px;
+  min-width: 400px;
+  //border: 1px solid black;
+}
+div.mitadvertical {
+  position: relative;
+  float: left;
+  min-height: 275px;
+  min-width: 200px;
+  max-height: 275px;
+  max-width: 200px;
+  //border: 1px solid black;
+}
+div.mitadvertical 
+div.teclado {
+  position: relative;
+  float: left;
+  min-height: 65px;
+  min-width: 65px;
+  //border: 1px solid black;
+  
+}
+
+
+.button {
+  text-decoration:none; text-align:center; 
+ padding:12px 15px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:48px;
+ -moz-border-radius:48px; 
+ border-radius: 48px; 
+ font:25px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+   -webkit-transition: all 0.46s ease-out;
+ -moz-transition:  all 0.46s ease-out;
+ -o-transition:  all 0.46s ease-out;
+ transition:  all 0.46s ease-out;
+}
+.button:hover{
+ padding:12px 15px; 
+ border:solid 1px #004F72; 
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px; 
+ border-radius: 50px; 
+ font:25px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+ .button:active{
+ padding:12px 15px; 
+ border:none; 
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px; 
+ border-radius: 50px; 
+ font:25px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3BA4C7; 
+ background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+ background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }
+
