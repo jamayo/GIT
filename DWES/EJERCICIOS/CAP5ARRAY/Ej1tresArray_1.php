@@ -16,13 +16,13 @@ Author: Jose A. Mayo
   </head>
   <body>
 <?php
-      $numero = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];//no hace falta cargarlo.
-      $cuadrado = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-      $cubo = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+      $numero;
+      $cuadrado;
+      $cubo;
       for ($i = 0; $i < 100; $i++){
         $numero[$i] = rand(0, 100);
       }   
-      for ($i = 0; $i < count($numero); $i++){
+      for ($i = 0; $i < 100; $i++){
         $cuadrado[$i] = pow($numero[$i] , 2);
         $cubo[$i] = pow($numero[$i] , 3);
       }        

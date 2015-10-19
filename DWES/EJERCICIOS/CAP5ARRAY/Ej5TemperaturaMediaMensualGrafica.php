@@ -52,6 +52,15 @@ Author: Jose A. Mayo
 <?php
   if ($grafica) {
     echo "<td>&nbsp;";
+    for($i = -10; $i <0; $i++){
+      if($temperatura < 0){
+    
+        echo "<span style='color:red'>=</span>";
+      }else {
+        echo "&nbsp;&nbsp;";
+      }
+      
+    }
     for($i = 0; $i < $temperatura; $i++){
       echo "=";
     }

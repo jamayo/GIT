@@ -41,7 +41,7 @@ Author: Jose A. Mayo
         foreach($arrayNumeros as $num){
           echo $num . ", ";
         }
-        echo "Los números desplazados son: ";
+        echo "<BR>Los números desplazados son: ";
         foreach($arrayDesplazados as $num){
           echo $num . ", ";
         }
