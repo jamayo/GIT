@@ -19,11 +19,11 @@ Author: Jose A. Mayo Mayo
     $cantidadNumeros = 10;
     $aleatorio = array();//INICIALIZO ARRAY CON AL MENOS UN DATO
     $barajaEspañola = array(
-        array("nombre" =>"Dama negra", "valor" => 11),
-        array("nombre" =>"Torre negra", "valor" => 0),
-        array("nombre" =>"Alfil negro", "valor" => 10),
-        array("nombre" =>"Caballo negro", "valor" => 0),
-        array("nombre" =>"Peon negro", "valor" => 0),
+        array("nombre" =>"As de bastos", "valor" => 11),
+        array("nombre" =>"Dos de bastos", "valor" => 0),
+        array("nombre" =>"Tres de bastos", "valor" => 10),
+        array("nombre" =>"Cuatro de bastos", "valor" => 0),
+        array("nombre" =>"Cinco de bastos", "valor" => 0),
         array("nombre" =>"Seis de bastos", "valor" => 0),
         array("nombre" =>"Siete de bastos", "valor" => 0),
         array("nombre" =>"Sota de bastos", "valor" => 2),

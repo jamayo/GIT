@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <!--
-Ejercicio 15
-Realiza un programa que sea capaz de rotar todos los elementos de una matriz cuadrada una posición
-en el sentido de las agujas del reloj. La matriz debe tener 12 filas por 12 columnas y debe contener
-números generados al azar entre 0 y 100. Se debe mostrar tanto la matriz original como la matriz
-resultado, ambas con los números convenientemente alineados.
+Realiza un programa que sea capaz de intercambiar filas y columnas de una matriz cuadrada.
+Se debe definir una matriz de 10 filas por 10 columnas que el programa llenará de forma
+aleatoria con números entre 10 y 99 (ambos incluidos). Después de mostrar la matriz por
+pantalla (con los números convenientemente alineados), el programa pedirá por teclado un
+número de fila y un número de columna. Después intercambiará los valores de la fila y la
+columna indicadas. Se debe mostrar por pantalla la matriz resultante.
+Tanto los números de fila como los números de columna se deben indicar convenientemente
+al mostrar la matriz original y la matriz resultado. La fila y columna intercambiada se debe
+mostrar en color verde.
 
-Author: Jose A. Mayo Mayo
+Author:  Jose Antonio Mayo Mayo
 -->
 <html>
   <head>
@@ -39,13 +43,13 @@ Author: Jose A. Mayo Mayo
 <?php
     //$minimo = 1000; //evaluo sobre numero superior al cualquiera de la matriz.
     //GENERO EL ARRAY Y LO LLENO DE NUMEROS ALEATORIOS.
-    $tamano = 12;
+    $tamano = 10;
     $filacol = $tamano - 1;
     $arrayMatrizNumeros = array();
     $arrayMatrizGirada = array();
     for ($i = 0; $i < $tamano; $i++){
       for ($j = 0; $j < $tamano; $j++){
-        $num = rand(0,100); //generador de aleatorios.
+        $num = rand(10,99); //generador de aleatorios.
         /*do {
           $num = rand(0,100);
           /*foreach($numeros as $fila){  //quito la comprobacion de numero unico (son 144)
@@ -69,7 +73,7 @@ Author: Jose A. Mayo Mayo
 ?>  
     <div>
     <table>
-      <caption>Array aleatorio 12 x 12</caption>
+      <caption>Array aleatorio <?= $tamano ?> x <?= $tamano ?></caption>
 <?php for ($f = 0; $f < $tamano; $f++){ ?>
       <tr>
   <?php for ($c = 0; $c < $tamano; $c++){ ?>
@@ -79,7 +83,7 @@ Author: Jose A. Mayo Mayo
 <?php } ?>
     </table>
     </div>
-<?php 
+<?php  /*
 
 
       //GIRO EL ARRAY
@@ -103,7 +107,7 @@ Author: Jose A. Mayo Mayo
     }
 
 
-
+*/
 ?>
     <div>
      <table>

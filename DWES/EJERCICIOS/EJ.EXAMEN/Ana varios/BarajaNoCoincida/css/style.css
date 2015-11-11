@@ -1,0 +1,229 @@
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,300,400);
+@import url(https://fonts.googleapis.com/css?family=Keania+One);
+
+/*---------------General----------------*/
+body {
+	background: white;
+	font-family: Roboto , sans-serif;
+	min-width: 900px;
+	color: white;
+}
+li {
+	list-style: none;
+}
+a {
+	color:white;
+	text-decoration: none;
+}
+/*---------------Header------------------*/
+header {
+	//float:left;
+	background-color: black;
+	//width: 12%;
+	height: 5em;
+        text-aling: center;
+	box-shadow: 0 0.25rem 0.5rem black; 
+}
+header h1 {
+        text-align: center;
+}
+header h2 {
+	background-color:#59BDBF ;
+	width: 100%;
+	height: 3rem;
+	box-shadow: 0 0.25rem 0.5rem black; 
+	text-align: center;
+	padding-top: 0.5em;
+	text-shadow: -1px -1px 1px black;
+}
+
+nav {
+	//float: left;
+        margin-top: 3em;
+	background-color: black;
+	box-shadow: 0 0.25rem 0.5rem black; 
+        font-size: 0.75em;
+        text-align: center;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin: 0.5em ;
+        text-transform: uppercase;
+        text-align: center;
+}
+nav > ul > li a {
+	font-weight: bold;
+}
+nav > ul > li > a:hover {
+	color:#59BDBF;
+	font-size: 1.25em;
+}
+
+/*----------------------Contenido-----------------------------*/
+section {
+	clear: both;
+}
+
+section article p, section article div{
+	color: #0C172B;
+	margin: 0 1.5%;
+	border-left:1px #EEE solid;
+	border-right:1px #EEE solid;
+}
+section article:first-child h3{
+	color: #0C172B;
+	margin: 0 1.5%;
+	border-left:1px #EEE solid;
+	border-right:1px #EEE solid;
+}
+
+section article {
+    text-align: center;
+}
+section article + article li > a {
+	//display: inline-block;
+        float:left;
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: #59BDBF;
+	border: #0C172B 1em solid;
+	box-shadow: 0 0.25rem 0.5rem black; 
+	margin:0 0 1% 1%;
+	padding: 5%;
+	text-align: center;
+	text-shadow:1px 1px 1px black;
+	font-weight: bold;
+}
+section article + article li a:hover {
+	background-color: white;
+	color:#59BDBF;
+	box-shadow: 0 0.25rem 0.3rem black;
+	text-decoration: 10px 10px 1px black;
+	font-size: 1.05em;
+}
+
+article + article h3 {
+	clear: both;
+	background-color: #070D18;
+	height: 1.5em;
+	padding-top: 0.25rem;
+	padding-left: 2em;
+	font-weight: normal;
+	box-shadow: 0 0.25rem 0.5rem black; 
+}
+article + article img {
+	background-color: white;
+	width: 25%;
+	max-height: 20rem;
+	border: 1em #070D18 solid;
+	box-shadow: 0 0.25rem 0.5rem black; 
+	margin: 2.5% 1.5%;
+}
+label {
+    color:#0C172B;
+}
+
+/*-----------------------------Antes y Despues----------------*/
+#anterior, #siguiente, #home {
+    font-size: 1.5em;
+    margin: 0 2em;
+}
+/*-------------------------------Footer-----------------------*/
+footer {
+	clear:both;
+	border-top: 1em #070D18 solid;
+	border-bottom: 1em #070D18 solid;
+	background:#E86700;
+	box-shadow: 0 0.25rem 0.5rem black; 
+	//margin-top: 1.5%;	
+}
+
+/*------------------------------ Ejercicio 1 ------------------*/
+table{
+    color:#0C172B;
+    margin: 0 auto;
+    border: 0.25em black solid;
+}
+table#eje1 tr:nth-child(2n) td{
+   background: aqua;
+   width: 9em;
+   margin:0;
+   padding: 0;
+}
+
+/*------------------------------- Ejercicio 4 ------------------*/
+span {
+    color: red;
+}
+
+/*------------------------------- Ejercicio 5 ------------------*/
+.ancho {
+    display: inline-block;
+    width: 0.5em;
+    background: red;
+}
+table#eje5 td:nth-child(3) {
+    width: 22em;
+    text-align: left;
+}
+
+/*------------------------------ Ejercicio 6 -------------------*/
+.par {
+    color:red;
+}
+.impar {
+    color: blue;
+}
+
+/*----------------------------- Ejercicios 8 -------------------*/
+.primo {
+    color:red;
+}
+table#eje8 td{
+    width: 2em;
+}
+
+/*----------------------------- Ejercicios 9 -------------------*/
+.eje9 td , .eje9 th{
+    width: 2.5em;
+}
+
+/*----------------------------- Ejercicios 13 ------------------*/
+.blue {
+    color:blue;
+    font-weight: bold;
+}
+.green {
+    color:green;
+    font-weight: bold;
+}
+
+/*----------------------------- Ejercicio 14 -------------------*/
+#ajedrez {
+    border-collapse: collapse;
+}
+#ajedrez td{
+    width: 4em;
+    height: 4em;
+    border: 1px black solid;
+}
+#ajedrez th {
+    min-width: 1.5em;
+    border: 1px black solid;
+}
+#ajedrez tr:nth-child(odd) td:nth-child(even){
+    background: black;
+}
+#ajedrez tr:nth-child(even) td:nth-child(odd){
+    background: black;
+}
+#ajedrez img {
+    width: 3em;
+    border: none;
+    border-radius: 50%;
+}
+#ajedrez input {
+    width: 2em;
+}

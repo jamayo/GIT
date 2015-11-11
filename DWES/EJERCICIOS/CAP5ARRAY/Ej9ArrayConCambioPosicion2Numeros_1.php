@@ -107,7 +107,7 @@ Author: Jose A. Mayo
   if (!$iniciado) {
     $contadorNumeros = 0;
     //$pideIndice = false;
-    echo "iniciado";
+    //echo "iniciado";
   }
   if ($contadorNumeros < $cantidadNumeros){
     //FORMULARIO INTRODUCCION NUMEROS

@@ -5,7 +5,7 @@ Escribe un programa que, dada una posición en un tablero de ajedrez, nos diga a
 saltar un alfil que se encuentra en esa posición. Indícalo de forma gráfica sobre el tablero con un
 color diferente para estas casillas donde puede saltar la figura. El alfil se mueve siempre en diagonal.
 El tablero cuenta con 64 casillas. Las columnas se indican con las letras de la “a” a la “h” y las filas
-se indican del 1 al 8.
+se indican del 1 al 8.  MODIFICADO PATRON A MOVIMIENTO DEL CABALLO.
 
 Author: Jose A. Mayo Mayo
 -->
@@ -104,14 +104,14 @@ Author: Jose A. Mayo Mayo
       div.alfilnegro {
         height: 30px;
         width: 30px;
-        background-image: url("img/alfil_negro.png");
+        background-image: url("img/caballo_negro.png");
         //opacity:0.3;
         float: left
       }
       div.alfilblanco {
         height: 30px;
         width: 30px;
-        background-image: url("img/alfil_blanco.png");
+        background-image: url("img/caballo_blanco.png");
         //opacity:0.3;
         float: left
       }
@@ -272,6 +272,7 @@ Author: Jose A. Mayo Mayo
       } else {
         $posnegro = false;
       }
+      $movMasFila = 
       $eje1 = $posicion_num + $posicion_letra;//el eje1 cumple que la resta de fila-columna es igual a la del minimo
       $eje2 = $posicion_num - $posicion_letra;//el eje2 cumple que la suma de fila+columna es igual a la del minimo
       for ($f = 8; $f > 0; $f--){
@@ -282,8 +283,9 @@ Author: Jose A. Mayo Mayo
             }else {
               echo "<div class='alfilblanco'></div>";
             }
-          } else if ((($f - $c) == $eje2) || (($f + $c) == $eje1)) {
-            if ($posnegro) {
+          } else if (((abs($f - $posicion_num) == 1) && (abs($c - $posicion_letra) == 2))||
+            ((abs($f - $posicion_num) == 2) && (abs($c - $posicion_letra) == 1))){
+            if (($f + $c)%2 == 0) {
               echo "<div class='negroalfil'></div>";
             } else {
               echo "<div class='blancoalfil'></div>";
@@ -313,7 +315,7 @@ Author: Jose A. Mayo Mayo
 ?>  <!--INTRODUCE POSICION DEL ALFIL -->
     <div id="botonera">
       <fieldset>
-      <legend>Movimientos del Alfil</legend>
+      <legend>Movimientos del Caballo</legend>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
           Notacion ejem: a2  g7  h8<br><br>
           Posición: <input type="text" name ="posicion" maxlength="2" size="1" autocomplete="off" autofocus>
