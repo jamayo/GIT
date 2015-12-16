@@ -1,0 +1,129 @@
+body{
+    font-weight: bold;
+    font-family: sans-serif,verdana;
+    background: orange;
+}
+h1{
+    font-size: 22px;
+    text-align: center;
+}
+#head{
+    background: #302127;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+#head_selector{
+    background: #302127;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 100px;
+    border: 1px solid #E69C16;
+    border-radius: 5px;
+}
+#head_lista{
+    background: #FBA406;
+    color: #ffcc66;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    border: 1px solid #E69C16;
+    border-radius: 5px;
+}
+#head_left{/*text-align: center;  MODIFICADO*/ 
+    background: #302127;
+    color: #fdfdfd;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+#body_left{ /*text-align: center;  MODIFICADO*/ 
+    background: #fff;
+    color: #222;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 2px;
+}
+#body{
+    background: #fff;
+    color: #222;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 2px;
+}
+.eliminar{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #920000;
+    color: #fff;
+    cursor: pointer;
+}
+.editar{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #468f42;
+    color: #fff;
+    cursor: pointer;
+}
+.agregar{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #0863be;
+    color: #fff;
+    cursor: pointer;
+}
+.entrada{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #ff8246;
+    color: #fff;
+    cursor: pointer;
+}
+.venta{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #990099;
+    color: #fff;
+    cursor: pointer;
+}
+.paginado{
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 0;
+    background: #ffba44;
+    color: #fff;
+    cursor: pointer;
+}
+.left{float:left}
+.right{float:right}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+.block {display: block;}
+.delete_modal{
+    font-size: 12px;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+.ui-dialog-title{
+    font-size: 12px;
+}
+.ui-button-text{
+    font-size: 12px;
+}
+.insert_modal,.edit_modal{
+    font-size: 12px;
+    margin: 30px 0px 0px 80px;
+}
+label{
+    display: block;
+    margin-left: 0px;
+}
